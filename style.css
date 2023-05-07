@@ -1,0 +1,165 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: black;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: yellow;
+	padding: 2rem 4rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.nav-logo {
+	font-size: xx-large;
+	font-weight: 800;
+}
+
+.nav-menu {
+	font-weight: bold;
+}
+
+.nav-menu a {
+	margin: 0 1rem 0 1rem;
+}
+
+.about,
+.about1 {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 1.2rem;
+	flex-wrap: wrap;
+}
+
+.about1 {
+	flex-wrap: wrap-reverse !important;
+}
+
+.about div,
+.about1 div {
+	flex-basis: 45%;
+	min-width: 30rem;
+}
+
+.about div img,
+.about1 div img {
+	width: 100%;
+	border-radius: 1rem;
+	transition: 0.3s;
+}
+
+.about1 div h1 {
+	text-align: right;
+}
+
+.about div p,
+.about1 div p {
+	margin-top: 1.2rem;
+	text-align: justify;
+}
+
+.about > div > img:hover,
+.about1 > div > img:hover {
+	filter: brightness(0.5);
+}
+
+.home {
+	height: 25rem;
+	width: 100vw;
+	background-image: url('img/example.jpeg');
+	background-size: cover;
+	/* background-position: center; */
+	/* background-repeat: repeat-y; */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home > h1 {
+	font-size: 3rem;
+	color: white;
+}
+
+.title {
+	text-align: center;
+	font-size: 2rem;
+}
+
+#about {
+	margin-top: 1.8rem;
+}
+
+#contact {
+	margin-top: 1.8rem;
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+	padding: 1rem 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+#contact form {
+	width: 30rem;
+}
+
+#contact .input-group input,
+#contact .input-group textarea {
+	padding: .8rem;
+	border-radius: .5rem;
+	border: none;
+	margin-top: .5rem;
+}
+
+#contact form button {
+	border: none;
+	outline: none;
+	padding: .5rem 1rem;
+	background: blue;
+	color: white;
+	cursor: pointer;
+	border-radius: .5rem;
+}
+
+#contact form button:hover {
+	filter: brightness(0.5);
+}
+
+
+/* LAPTOP::START */
+@media (max-width: 1366px) {
+	
+}
+/* LAPTOP::END */
+
+/* TABLET::START */
+@media (max-width: 760px) {
+
+}
+/* TABLET::END */
+
+/* PHONE::START */
+@media (max-width: 450px) {
+
+}
+/* PHONE::END */
