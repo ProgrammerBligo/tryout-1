@@ -23,7 +23,7 @@ a {
 }
 
 .nav-logo {
-	font-size: xx-large;
+	font-size: 2rem;
 	font-weight: 800;
 }
 
@@ -90,7 +90,7 @@ a {
 }
 
 .home > h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: white;
 }
 
@@ -145,21 +145,52 @@ a {
 	filter: brightness(0.5);
 }
 
+#toggle {
+	display: none;
+}
 
 /* LAPTOP::START */
 @media (max-width: 1366px) {
-	
+	html,
+	input,
+	textarea,
+	button {
+		font-size: 75%;
+	}
 }
 /* LAPTOP::END */
 
 /* TABLET::START */
 @media (max-width: 760px) {
+	html,
+	input,
+	textarea,
+	button {
+		font-size: 62.5%;
+	}
 
+	.nav-menu {
+		display: none;
+	}
+
+	#toggle {
+		display: block;
+	}
 }
 /* TABLET::END */
 
 /* PHONE::START */
 @media (max-width: 450px) {
+	html,
+	input,
+	textarea,
+	button {
+		font-size: 55%;
+	}
 
+	.about div h1,
+	.about1 div h1 {
+		text-align: center;
+	}
 }
 /* PHONE::END */
